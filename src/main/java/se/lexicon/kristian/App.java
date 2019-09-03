@@ -56,7 +56,7 @@ public class App {
 
     private static int div(int x, int y) {
         if (y <= 0) {
-           return (y = 0);
+           return (x = 0);
         }
         else {
             return x / y;
