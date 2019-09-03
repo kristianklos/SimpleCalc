@@ -20,7 +20,7 @@ abstract class App {
                                                   "\n[3] Multiplication " +
                                                   "\n[4] Division");
 
-        //checking wich arithmetic you picked
+        //checking which arithmetic you picked
         int choose;
         choose = inp.nextInt();
 
@@ -39,7 +39,7 @@ abstract class App {
                 System.out.println("Answer:" + div( num1,num2));
                 break;
             default:
-                System.out.println("Error");
+                System.out.println("Error! (are you trying to divide by 0?)");
         }
     }
         //doing the calculations
