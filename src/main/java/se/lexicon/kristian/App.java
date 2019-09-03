@@ -8,6 +8,7 @@ abstract class App {
     public static void main(String[] args)
     {
         System.out.println("Enter first and second number:");
+        //checking input
         Scanner inp= new Scanner(System.in);
         int num1;
         num1 = inp.nextInt();
