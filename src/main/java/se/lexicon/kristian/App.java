@@ -14,12 +14,13 @@ abstract class App {
         num1 = inp.nextInt();
         int num2 = inp.nextInt();
         int ans;
+        //choose arithmetic
         System.out.println("Enter your arithmetic: \n[1] Addition "+
                                                   "\n[2] Substraction " +
                                                   "\n[3] Multiplication " +
                                                   "\n[4] Division");
 
-        //pick which arithmetic you want to use
+        //checking wich arithmetic you picked
         int choose;
         choose = inp.nextInt();
 
