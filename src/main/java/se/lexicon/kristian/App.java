@@ -12,11 +12,14 @@ public class App {
         num1 = inp.nextInt();
         int num2 = inp.nextInt();
         int ans;
+        if (num1 < 1) {
+            num1 = 1;
+        }
         //choose arithmetic
-        System.out.println("Enter your arithmetic: \n[1] Addition " +
-                "\n[2] Substraction " +
-                "\n[3] Multiplication " +
-                "\n[4] Division");
+        System.out.println("Enter your arithmetic:   \n[1] Addition " +
+                                                    "\n[2] Substraction " +
+                                                    "\n[3] Multiplication " +
+                                                    "\n[4] Division");
 
         //checking which arithmetic you picked
         int choose;
@@ -55,9 +58,11 @@ public class App {
     }
 
     private static int div(int x, int y) {
-        //fixing the /0 crash
-        if (y <= 0) {
-           return 0;
+        //fixing the div by 0 crash
+        if (x == 0 || y == 0) {
+            System.out.println("I'm afraid i can't let you do that");
+          return 0;
+
         }
         else {
             return x / y;
